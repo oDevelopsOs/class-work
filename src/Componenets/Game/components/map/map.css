@@ -1,0 +1,58 @@
+/* CSS du background */
+
+.background-map {
+  position: relative;
+  background-image: url(../../img/background-map.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+/* CSS de la boule de Sage */
+
+.power {
+  position: absolute !important;
+  top: 39px;
+  left: -34%;
+  -webkit-animation: power-animation 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+  animation: power-animation 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+}
+
+/* CSS de la colonne de droite pour notre texte */
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  justify-content: center;
+  height: 600px;
+}
+
+/* CSS de l'animation pour la boule de Sage */
+
+@keyframes power-animation {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+/* CSS pour le responsive */
+
+@media screen and (max-width: 768px) {
+  .col-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .power {
+    display: none;
+  }
+}

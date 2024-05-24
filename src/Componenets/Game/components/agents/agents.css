@@ -1,0 +1,108 @@
+/* CSS CONTAINER */
+
+.container-agents {
+  position: relative;
+  background-image: url(../../img/background-agents.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-slide {
+  background-image: url(../../img/background-slide.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* CSS DES TRIANGLES */
+
+.triangle-left {
+  display: inline-block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-right: 200px solid transparent;
+  border-bottom: 50px solid #0f1923;
+  top: -50px;
+}
+
+.triangle-right {
+  display: inline-block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 200px solid transparent;
+  border-bottom: 50px solid #0f1923;
+  top: -50px;
+  right: 0;
+}
+
+/* CSS DES CARDS */
+
+.agent-css {
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img-role {
+  margin: 0px !important;
+  margin-right: 10px !important;
+  margin-bottom: 5px !important;
+}
+
+/* CSS DES BLOBS */
+
+.blob-left-css {
+  position: absolute;
+  left: 80px;
+  bottom: 100px;
+  object-fit: contain;
+  animation: blob 7s cubic-bezier(0.6, 0.04, 0.4, 0.335) infinite alternate;
+}
+
+.blob-right-css {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  object-fit: contain;
+  animation: blob 5s cubic-bezier(0.6, 0.04, 0.4, 0.335) infinite alternate;
+}
+
+/* Animation du blob */
+
+@keyframes blob {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+/* CSS responsive pour faire disparaitre les blobs et triangles */
+
+@media screen and (max-width: 1024px) {
+  .blob-left-css {
+    display: none;
+  }
+
+  .blob-right-css {
+    display: none;
+  }
+
+  .triangle-left {
+    display: none;
+  }
+
+  .triangle-right {
+    display: none;
+  }
+}

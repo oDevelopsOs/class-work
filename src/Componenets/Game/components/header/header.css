@@ -1,0 +1,33 @@
+/* CSS du container englobant la vidéo et le texte */
+
+.container-header {
+  position: relative;
+}
+
+/* CSS de la vidéo */
+
+.video {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  top: 0px;
+  left: 50%;
+}
+
+/* CSS du container qui contient le texte */
+
+.container-css {
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* CSS de la row */
+
+.row-direction {
+  flex-direction: column;
+  text-align: center;
+}

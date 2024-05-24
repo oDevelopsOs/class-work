@@ -1,0 +1,49 @@
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  
+  .made, .oos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666666; /* Gris oscuro */
+  }
+  
+  .oos {
+    margin-top: 2rem;
+  }
+  
+  .title {
+    font-size: 9rem;
+    color: #333333; /* Amarillo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+  }
+  
+  .title span {
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+  
+  .title span:hover {
+    transform: scale(1.1); /* Escala al hacer hover */
+  }
+  
+  .c {
+    font-size: 14rem;
+    color: #333333; /* Amarillo */
+    transform: skew(-10deg);
+    padding: 0 0.5rem; /* Añadir espacio alrededor de la letra */
+  }
+  
+  .f, .i, .t, .e, .c2, .h {
+    color: #1793d1; /* Azul */
+  }
+  
+  .oos {
+    font-size: 1.2rem;
+    margin-top: 10rem;
+    font-weight: bold;
+  }
+  
